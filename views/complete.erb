@@ -47,33 +47,33 @@
     <% tel = params['tel'] %>
     <% content = params['content'] %>
     
-        <div class="row">
-            <table class = "table">
+        <div>
+            <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>送信内容</th>
+                        <th colspan="2">送信内容</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="col-sm-3">会社名</td>
-                        <td class="col-sm-9"><%= company %></td>
+                        <td>会社名</td>
+                        <td><%= company %></td>
                     </tr>
                     <tr>
-                        <td class="col-sm-3">氏名</td>
-                        <td class="col-sm-9"><%= name %></td>
+                        <td>氏名</td>
+                        <td><%= name %></td>
                     </tr>
                     <tr>
-                        <td class="col-sm-3">メール</td>
-                        <td class="col-sm-9"><%= mail %></td>
+                        <td>メール</td>
+                        <td><%= mail %></td>
                     </tr>
                     <tr>
-                        <td class="col-sm-3">電話番号</td>
-                        <td class="col-sm-9"><%= tel %></td>
+                        <td>電話番号</td>
+                        <td><%= tel %></td>
                     </tr>
                     <tr>
-                        <td class="col-sm-3">内容</td>
-                        <td class="col-sm-9"><%= content.gsub(/\r\n|\r|\n/, "<br>") %></td>
+                        <td>内容</td>
+                        <td><%= content.gsub(/\r\n|\r|\n/, "<br>") %></td>
                     </tr>
                 </tbody>
             </table>
